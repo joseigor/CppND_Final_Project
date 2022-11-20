@@ -1,0 +1,53 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+ "https://specifications.freedesktop.org/dbus/introspect-latest.dtd">
+<node name="/com/cppnd/calculator">
+	<interface name="com.cppnd.calculator">
+		<!-- Add() - return the sum of all values passed as input   -->
+		<!-- INPUT:                                                 -->
+		<!--     @values: array of values to sum                    -->
+		<!-- OUTPUT:                                                -->
+		<!--     @result: the sum of all values                     -->
+		<!--                                                        -->
+		<method name="Add">
+			<arg name="values" direction="in" type="ad" />
+			<arg name="result" direction="out" type="d" />
+		</method>
+
+		<!-- Sub() - calculates of a - b                           -->
+		<!-- INPUT:                                                -->
+		<!--     @b: first operand                                 -->
+		<!--     @a: second operand                                -->
+		<!-- OUTPUT:                                               -->
+		<!--     @result: a - b                                    -->
+		<!--                                                       -->
+		<method name="Sub">
+			<arg name="a" direction="in" type="d" />
+			<arg name="b" direction="in" type="d" />
+			<arg name="result" direction="out" type="d" />
+		</method>
+
+		<!-- Mult() - return the multiplication of all values passed as input  -->
+		<!-- INPUT:                                                            -->
+		<!--     @values: array of values to multiply                          -->
+		<!-- OUTPUT:                                                           -->
+		<!--     @result: the result of the multiplication                     -->
+		<!--                                                                   -->
+		<method name="Mult">
+			<arg name="values" direction="in" type="ad" />
+			<arg name="result" direction="out" type="d" />
+		</method>
+
+		<!-- Div() - calculates of a / b                           -->
+		<!-- INPUT:                                                -->
+		<!--     @b: first operand                                 -->
+		<!--     @a: second operand                                -->
+		<!-- OUTPUT:                                               -->
+		<!--     @result: a / b                                    -->
+		<!--                                                       -->
+		<method name="Div">
+			<arg name="a" direction="in" type="d" />
+			<arg name="b" direction="in" type="d" />
+			<arg name="result" direction="out" type="d" />
+		</method>
+	</interface>
+</node>

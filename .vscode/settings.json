@@ -1,0 +1,53 @@
+{
+    "editor.formatOnSave": true,
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "type": "whole-line",
+            "foreground": "#00ffff",
+            "background": "#006400",
+            "gutterIcon": true,
+            "iconColour": "green",
+        },
+        "FIXME": {
+            "type": "whole-line",
+            "foreground": "white",
+            "background": "#ff4000",
+            "gutterIcon": true,
+            "iconColour": "red",
+        },
+        "BUG": {
+            "type": "whole-line",
+            "foreground": "white",
+            "background": "red",
+            "gutterIcon": true,
+            "iconColour": "red",
+        }
+    },
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "FIXIT",
+        "BUG",
+        "NOTE",
+        "INFO",
+    ],
+    "todo-tree.general.tagGroups": {
+        "TODO": [
+            "TODO",
+        ],
+        "FIXME": [
+            "FIXME",
+            "FIXIT",
+        ],
+        "BUG": [
+            "BUG",
+        ],
+        "NOTE": [
+            "NOTE",
+            "INFO",
+        ],
+    },
+    "todo-tree.regex.regex": "((//|#|;|\\*)[ ]*($TAGS)[^\\n]*)|(/\\*(\\*?\\s*)*($TAGS)(.|\\n|\\r)*?\\*/)|(<!--\\s*($TAGS)(.|\\n|\\r)*?-->)",
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "C_Cpp.autoAddFileAssociations": false,
+}
